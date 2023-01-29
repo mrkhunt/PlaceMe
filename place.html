@@ -1,0 +1,221 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./place.css" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&display=swap" rel="stylesheet">
+
+
+    <title>PlaceMe</title>
+</head>
+<body>
+    <div id="navbar" class="navbar">
+        <img id="logo" src="/logo PlaceMe.png" alt="logo">
+        <a id="name" href="./index.html">PlaceMe</a>
+        <span class="elements" >
+            <a id="homeel" href="./index.html">Home</a>
+            <a id="aboutel" href="./index.html/#about">About Us</a>
+            <a id="contactel" href="./index.html/#contact">Contact</a>
+        </span>
+    </div>
+
+    <h2 id="title-place" style="text-align:center"> PlaceMe </h2>
+    <p id = "body-place" style="text-align:center">   Choose your top 3 Priorities from Housing Prices, 
+      Crime Rate, and the Ez Score to get a list of customized neighbourhoods matching your preference
+    </p>
+
+
+    <div>
+      <label id = "prt1" for="1p">Choose Priority #1:</label>
+    
+        <select onchange="change1()" id = "drp1" name="1p" >
+          <option value="default" selected>Select One Please</option>
+        </select>
+    </div>
+
+    
+
+    <div>
+      <label id = "prt2" for="2p">Choose Priority #2:</label>
+    
+        <select onchange="change2()" id = "drp2" name="2p" >
+          <option value="default" selected>Select One Please</option>
+        </select>
+    </div>
+    
+
+    <div>
+      <label id = "prt3" for="3p">Choose Priority #3:</label>
+        <select id = "drp3" name="3p" >
+          <option value="default" selected>Select One Please</option>
+      </select>
+    </div>
+    <a href="./result1.html"><input id = "submit-button" type="button" name="button" value="Submit" >
+    </a>
+    <script>
+      function intial(){
+      var drop = document.getElementById("drp1");
+      var arr = ["Housing","Crime Rate","Convenience Score"]
+      for (i=0;i<arr.length;i++){
+        var opt = document.createElement("option");
+        drop.innerHTML += '<option id="' + i + '">' + arr[i] + '</option>';
+      }
+    }
+      
+    function change1(){
+      var drop = document.getElementById("drp1");
+      var arr = ["Housing","Crime Rate","Convenience Score"]
+      var text = drop.options[drop.selectedIndex].text
+      var drop1 = document.getElementById("drp2")
+      drop1.innerHTML = ""
+      var arr1 = arr.filter((el) => el != text );
+      for (i=0;i<arr1.length;i++){
+        var opt = document.createElement("option");
+        drop1.innerHTML += '<option id="' + i + '">' + arr1[i] + '</option>';
+
+      }
+      change2()
+    }
+    function change2(){
+      var drop = document.getElementById("drp1");
+      var arr = ["Housing","Crime Rate","Convenience Score"]
+      var text = drop.options[drop.selectedIndex].text
+      var drop1 = document.getElementById("drp2")
+      var arr1 = arr.filter((el) => el != text );
+      var text1 = drop1.options[drop1.selectedIndex].text;
+      var drop2 = document.getElementById("drp3")
+      var arr2 =arr1.filter((el) => el != text1 );
+      drop2.innerHTML = ""
+
+      for (i=0;i<arr2.length;i++){
+       
+        var opt = document.createElement("option");
+        drop2.innerHTML += '<option id="' + i + '">' + arr2[i] + '</option>';
+      
+      }
+
+      var val1 = document.getElementById('drp1').options[document.getElementById('drp1').selectedIndex].innerText;
+      var val2 = document.getElementById('drp2').options[document.getElementById('drp2').selectedIndex].innerText;
+      var val3 = document.getElementById('drp3').options[document.getElementById('drp3').selectedIndex].innerText;
+      const tcp = [{"Community":"South Riverdale","Price":"$1,592,777.00","Safety":1.757784,"eScore":91}, 
+      {"Community":"Niagara","Price":"$800,000.00","Safety":1.581142,"eScore":89},
+      {"Community":"Woodbine-Lumsden","Price":"$1,187,356.00","Safety":0.699301,"eScore":83.66},
+      {"Community":"Greenwood-Coxwell","Price":"$1,360,833.00","Safety":1.505168,"eScore":79},
+      {"Community":"Wychwood","Price":"$1,674,960.00","Safety":1.252958,"eScore":79}];
+
+      const tpc = [{"Community":"Little Portugal","Price":"$1,970,200.00","Safety":1.144032,"eScore":84},
+      {"Community":"Woodbine-Lumsden","Price":"$1,187,356.00","Safety":0.699301,"eScore":83.66},
+      {"Community":"Wychwood","Price":"$1,674,960.00","Safety":1.252958,"eScore":79},
+      {"Community":"Greenwood-Coxwell","Price":"$1,360,833.00","Safety":1.505168,"eScore":79},
+      {"Community":"Briar Hill-Belgravia","Price":"$1,257,002.00","Safety":1.276566,"eScore":76}];
+
+      const ctp = [{"Community":"Woodbine-Lumsden","Price":"$1,187,356.00","Safety":0.699301,"eScore":83.66},
+      {"Community":"Woodbine Corridor","Price":"$1,215,123.00","Safety":1.227972,"eScore":75},
+      {"Community":"Wychwood","Price":"$1,674,960.00","Safety":1.252958,"eScore":79},
+      {"Community":"Briar Hill-Belgravia","Price":"$1,257,002.00","Safety":1.276566,"eScore":76},
+      {"Community":"Long Branch","Price":"$1,409,889.00","Safety":1.309004,"eScore":72}];
+
+      const cpt = [{"Community":"Woodbine-Lumsden","Price":"$1,187,356.00","Safety":0.699301,"eScore":83.66},
+      {"Community":"Woodbine Corridor","Price":"$1,215,123.00","Safety":1.227972,"eScore":75},
+      {"Community":"Wychwood","Price":"$1,674,960.00","Safety":1.252958,"eScore":79},
+      {"Community":"Briar Hill-Belgravia","Price":"$1,257,002.00","Safety":1.276566,"eScore":76},
+      {"Community":"Long Branch","Price":"$1,409,889.00","Safety":1.309004,"eScore":72}];
+
+      const pct = [{"Community":"Niagara","Price":"$800,000.00","Safety":1.581142,"eScore":89},
+      {"Community":"Oakridge","Price":"$1,161,833.00","Safety":1.820152,"eScore":68.66},
+      {"Community":"Woodbine-Lumsden","Price":"$1,187,356.00","Safety":0.699301,"eScore":83.66},
+      {"Community":"Woodbine Corridor","Price":"$1,215,123.00","Safety":1.227972,"eScore":75},
+      {"Community":"Briar Hill-Belgravia","Price":"$1,257,002.00","Safety":1.276566,"eScore":76}];
+
+      const ptc = [{"Community":"Niagara","Price":"$800,000.00","Safety":1.581142,"eScore":89},
+      {"Community":"Woodbine-Lumsden","Price":"$1,187,356.00","Safety":0.699301,"eScore":83.66},
+      {"Community":"Woodbine Corridor","Price":"$1,215,123.00","Safety":1.227972,"eScore":75},
+      {"Community":"Briar Hill-Belgravia","Price":"$1,257,002.00","Safety":1.276566,"eScore":76},
+      {"Community":"Etobicoke West Mall","Price":"$1,300,625.00","Safety":0.734301,"eScore":56}];
+
+      var arr;
+      if ((val1 === "Housing") && (val2 === "Crime Rate") && (val3 === "Convenience Score")){
+        arr = pct;
+      }
+      else if ((val1 === "Housing") && (val2 ===  "Convenience Score" ) && (val3 === "Crime Rate")){
+        arr = ptc; 
+      }
+      else if ((val1 === "Crime Rate"  ) && (val2 === "Housing") && (val3 === "Convenience Score")){
+        arr = cpt; 
+      }
+      else if ((val1 ===  "Crime Rate" ) && (val2 === "Convenience Score") && (val3 === "Housing" )){
+        arr = ctp;
+      }
+      else if ((val1 === "Convenience Score") && (val2 === "Crime Rate") && (val3 === "Housing")){
+        arr= tcp;
+      }
+      else if ((val1 === "Convenience Score") && (val2 === "Housing") && (val3 === "Crime Rate")){
+        arr = tpc;
+      }
+      let myobj = arr.map(place => {
+       return [place.Community, place.Price, place.Safety, place.eScore]
+      });
+      myName1 = myobj[0][0];
+      myPrice1 = myobj[0][1];
+      mySafety1 = myobj[0][2];
+      myConvenience1 = myobj[0][3];
+      myName2 = myobj[1][0];
+      myPrice2 = myobj[1][1];
+      mySafety2 = myobj[1][2];
+      myConvenience2 = myobj[1][3];
+      myName3 = myobj[2][0];
+      myPrice3 = myobj[2][1];
+      mySafety3 = myobj[2][2];
+      myConvenience3 = myobj[2][3];
+      myName4 = myobj[3][0];
+      myPrice4 = myobj[3][1];
+      mySafety4 = myobj[3][2];
+      myConvenience4 = myobj[3][3];
+      myName5 = myobj[4][0];
+      myPrice5 = myobj[4][1];
+      mySafety5 = myobj[4][2];
+      myConvenience5 = myobj[4][3];
+
+      localStorage.setItem("n1",myName1)
+      localStorage.setItem("p1",myPrice1)
+      localStorage.setItem("c1",mySafety1)
+      localStorage.setItem("t1",myConvenience1)
+      localStorage.setItem("n2",myName2)
+      localStorage.setItem("p2",myPrice2)
+      localStorage.setItem("c2",mySafety2)
+      localStorage.setItem("t2",myConvenience2)
+      localStorage.setItem("n3",myName3)
+      localStorage.setItem("p3",myPrice3)
+      localStorage.setItem("c3",mySafety3)
+      localStorage.setItem("t3",myConvenience3)
+      localStorage.setItem("n4",myName4)
+      localStorage.setItem("p4",myPrice4)
+      localStorage.setItem("c4",mySafety4)
+      localStorage.setItem("t4",myConvenience4)
+      localStorage.setItem("n5",myName5)
+      localStorage.setItem("p5",myPrice5)
+      localStorage.setItem("c5",mySafety5)
+      localStorage.setItem("t5",myConvenience5)
+            
+
+
+
+    }
+    intial()
+
+    </script>
+    
+    
+    
+
+  </body>
+  </html>
+
+  

@@ -1,2 +1,2 @@
 # PlaceMe
-Tensed about not finding the right place to stay? Don’t worry! Get Placed now at PlaceMe! At PlaceMe, we help place you in the neighbourhood of your dreams!
+At PlaceMe, we place you in the perfect neighbourhood based on your preferences which are sorted by Housing Prices, Crime Rate, and Convenience Score.

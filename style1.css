@@ -1,0 +1,662 @@
+/* Frame 4 */
+body{
+position: relative;
+width: 1680px;
+height: 2420px;
+
+background: #DDD6CA;
+}
+html {
+    height: 100%;
+    overflow-x: hidden;
+}
+body {
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+body { margin:0}
+
+/* Rectangle 5 */
+#navbar{
+    position: absolute;
+width: 1680px;
+height: 81px;
+left: 0px;
+top: 0px;
+
+background: #9D7D61;
+}
+
+#logo1 {
+    position: absolute;
+    width: 56px;
+    height: 55px;
+    left: 16px;
+    top: 13px;
+    background: url(/logo\ PlaceMe.png);
+}
+
+
+
+/* PlaceMe */
+#name{
+    position: absolute;
+    width: 137px;
+    height: 47px;
+    left: 90px;
+    top: 17px;
+    
+    font-family: 'Roboto Flex';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    /* identical to box height */
+    text-align: center;
+    
+    color: #DDD6CA;
+    
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+/* Home */
+#homeel{
+    position: absolute;
+    width: 75px;
+    height: 35px;
+    left: 1258px;
+    top: 24px;
+    
+    font-family: 'Roboto Flex';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    
+    color: #DDD6CA;
+    
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+/* About Us */
+#aboutel{
+/* About Us */
+
+position: absolute;
+width: 113px;
+height: 35px;
+left: 1363px;
+top: 24px;
+
+font-family: 'Roboto Flex';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 35px;
+
+color: #DDD6CA;
+
+text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/* Contact Us */
+#contactel{
+/* Contact Us */
+
+position: absolute;
+width: 137px;
+height: 35px;
+left: 1506px;
+top: 24px;
+
+font-family: 'Roboto Flex';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 35px;
+
+color: #DDD6CA;
+
+text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+/* At PlaceMe .... */
+#atp{
+    position: absolute;
+width: 446px;
+height: 94px;
+left: 62px;
+top: 479px;
+
+font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: 700;
+font-size: 80px;
+line-height: 94px;
+/* identical to box height */
+letter-spacing: -0.05em;
+
+color: #614D46;
+
+
+}
+/* Did You Know? */
+#did{
+    position: absolute;
+    width: 270px;
+    height: 59px;
+    left: 1038px;
+    top: 1350px;
+    
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 59px;
+    /* identical to box height */
+    letter-spacing: -0.05em;
+    
+    color: #614D46;
+    
+}
+
+
+
+
+/* neighbourhood 2 */
+
+#img1{
+    
+    box-sizing: border-box;
+
+position: absolute;
+width: 701px;
+height: 672px;
+left: 915px;
+top: 131px;
+
+background: url(/home-image.png);
+opacity: 1;
+border: 10px solid #9D7D61;
+border-radius: 30px;
+
+}
+
+/*Home page*/
+
+#img2{
+    
+    position: absolute;
+width: 696px;
+height: 696px;
+left: 81px;
+top: 896px;
+object-fit: cover;
+background: url(/vector-image-1.png);
+
+}
+
+
+
+
+/* logo PlaceMe 2 
+
+position: absolute;
+width: 56px;
+height: 55px;
+left: 985px;
+top: 339px;
+
+background: url(logo PlaceMe.png);
+*/
+
+/* logo PlaceMe 4 
+
+position: absolute;
+width: 56px;
+height: 55px;
+left: 840px;
+top: 183px;
+
+background: url(logo PlaceMe.png);
+
+*/
+/* logo PlaceMe 7 
+
+position: absolute;
+width: 56px;
+height: 55px;
+left: 1158px;
+top: 257px;
+
+background: url(logo PlaceMe.png);
+*/
+
+/* logo PlaceMe 5 
+
+position: absolute;
+width: 56px;
+height: 55px;
+left: 1024px;
+top: 499px;
+
+background: url(logo PlaceMe.png);
+
+*/
+/* logo PlaceMe 6 
+
+position: absolute;
+width: 56px;
+height: 55px;
+left: 1132px;
+top: 604px;
+
+background: url(logo PlaceMe.png);
+*/
+
+/* logo PlaceMe 8 
+
+position: absolute;
+width: 56px;
+height: 55px;
+left: 840px;
+top: 489px;
+
+background: url(logo PlaceMe.png);
+*/
+
+/* We place you in the perfect neighbourhood based on your preferences. You can sort by: Housing Prices Crime Rate Convenience */
+#wep{
+    position: absolute;
+    width: 760px;
+    height: 267px;
+    left: 60px;
+    top: 586px;
+    
+    font-family: 'Roboto Flex';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    
+    color: #614D46;
+
+}
+
+/* PlaceMe */
+#f1{
+    position: absolute;
+    width: 264px;
+    height: 94px;
+    left: 870px;
+    top: 850px;
+    
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 94px;
+    /* identical to box height */
+    letter-spacing: -0.05em;
+    
+    color: #614D46;
+
+}
+
+/* Rectangle 12 */
+#rect12{
+
+    position: absolute;
+    width: 480px;
+    height: 105px;
+    left: 898px;
+    top: 1267px;
+    
+    background: #9D7D61;
+    border-radius: 20px;
+}
+
+/* Get started with PlaceMe */
+#b1{
+
+    position: absolute;
+    width: 432px;
+    height: 51px;
+    left: 927px;
+    top: 1295px;
+    
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: -0.05em;
+    
+    color: #DDD6CA;
+}
+
+
+/* We place you in the perfect neighbourhood based on your preferences. You can sort by: Housing Prices Crime Rate Convenience */
+#p2{
+    position: absolute;
+width: 775px;
+height: 274px;
+left: 870px;
+top: 950px;
+
+font-family: 'Roboto Flex';
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 47px;
+
+color: #614D46;
+
+
+}
+
+/* 50% OF THE POPULATION IS STILL LOOKING FOR THEIR DREAM HOME */
+#popn{
+
+    position: absolute;
+    width: 510px;
+    height: 71px;
+    left: 1038px;
+    top: 1430px;
+    
+    font-family: 'Roboto Flex';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    
+    color: #614D46;
+}
+
+
+/* Looking for your dream place? */
+#a1{
+    position: absolute;
+width: 445px;
+height: 47px;
+left: 60px;
+top: 129px;
+
+font-family: 'Roboto Flex';
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 47px;
+/* identical to box height */
+letter-spacing: -0.05em;
+
+color: #614D46;
+
+    
+
+}
+
+/* Worried about the increasing crime rates? */
+#a2{
+/* Worried about the increasing crime rates? */
+
+position: absolute;
+width: 611px;
+height: 47px;
+left: 174px;
+top: 199px;
+
+font-family: 'Roboto Flex';
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 47px;
+/* identical to box height */
+letter-spacing: -0.05em;
+
+color: #614D46;
+}
+
+
+/* Is convenience a priority for you? */
+#a3{
+/* Is convenience a priority for you? */
+
+position: absolute;
+width: 476px;
+height: 47px;
+left: 60px;
+top: 269px;
+
+font-family: 'Roboto Flex';
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 47px;
+/* identical to box height */
+letter-spacing: -0.05em;
+
+color: #614D46;
+
+}
+
+/* Looking for affordable places in safe areas? */
+#a4{
+/* Looking for affordable places in safe areas? */
+
+position: absolute;
+width: 633px;
+height: 47px;
+left: 155px;
+top: 339px;
+
+font-family: 'Roboto Flex';
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 47px;
+/* identical to box height */
+letter-spacing: -0.05em;
+
+color: #614D46;
+
+
+}
+
+/* Want a house in your budget? */
+#a5{
+  
+position: absolute;
+width: 437px;
+height: 47px;
+left: 60px;
+top: 409px;
+
+font-family: 'Roboto Flex';
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 47px;
+/* identical to box height */
+letter-spacing: -0.05em;
+
+color: #614D46;
+
+
+}
+
+/* 2388402 1 */
+#img3{
+position: absolute;
+width: 616px;
+height: 616px;
+left: 618px;
+top: 928px;
+
+background: url(2388402.png);
+}
+
+/* Did You Know? */
+#do{
+    position: absolute;
+    width: 270px;
+    height: 59px;
+    left: 256px;
+    top: 2160px;
+    
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 59px;
+    /* identical to box height */
+    letter-spacing: -0.05em;
+    
+    color: #614D46;
+    
+}
+
+
+/* BriefMe */
+#f2 {
+    position: absolute;
+    width: 241px;
+    height: 94px;
+    left: 88px;
+    top: 1680px;
+    
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 94px;
+    /* identical to box height */
+    letter-spacing: -0.05em;
+    
+    color: #614D46;
+    
+}
+
+
+
+/* AboutMe */
+#ab{
+    position: absolute;
+    width: 278px;
+    height: 94px;
+    left: 701px;
+    top: 2393px;
+    
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 94px;
+    /* identical to box height */
+    letter-spacing: -0.05em;
+    
+    color: #614D46;
+
+}
+
+
+
+/* Rectangle 13 or Rectangle 14*/
+#rect13{
+    position: absolute;
+    width: 480px;
+    height: 105px;
+    left: 88px;
+    top: 2000px;
+    
+    background: #9D7D61;
+    border-radius: 20px;
+}
+/* Get started with BriefMe*/
+#b2{
+    position: absolute;
+    width: 432px;
+    height: 51px;
+    left: 117px;
+    top: 2020px;
+    
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: -0.05em;
+    
+    color: #DDD6CA;
+    
+}
+    
+
+/* Enter any neighbourhood below to get information about the Housing Prices, Crime Rate and its Convenience score */
+#p3{
+    position: absolute;
+    width: 752px;
+    height: 147px;
+    left: 88px;
+    top: 1780px;
+    
+    font-family: 'Roboto Flex';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    
+    color: #614D46;
+
+}
+
+/* 50% OF THE POPULATION IS STILL LOOKING FOR THEIR DREAM HOME */
+#popn2{
+    position: absolute;
+    width: 410px;
+    height: 71px;
+    left: 256px;
+    top: 2225px;
+    
+    font-family: 'Roboto Flex';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    text-transform: lowercase;
+    
+    color: #614D46;
+}
+
+/* 1648590 1 */
+#img3{
+
+    position: absolute;
+    width: 684px;
+    height: 684px;
+    left: 870px;
+    top: 1644px;
+    
+    background: url(/vector-image-2.png);
+}
+
+#did-you-know-1{
+    position: absolute;
+width: 138px;
+height: 136px;
+left: 870px;
+top: 1415px;
+border-image-width: 30px;
+    background: url(/logo-136.png);
+}
+
+#did-you-know-2{
+    position: absolute;
+width: 138px;
+height: 136px;
+left: 88px;
+top: 2200px;
+    background: url(/logo-136.png);
+}
+

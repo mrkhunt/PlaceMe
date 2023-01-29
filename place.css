@@ -1,0 +1,252 @@
+body{
+  position: relative;
+  width: 1680px;
+  height: 800px;
+  
+  background: #DDD6CA;
+  }
+  html {
+      height: 100%;
+      overflow-x: hidden;
+  }
+  body {
+      min-height: 100%;
+      overflow-x: hidden;
+  }
+  
+  body { margin:0}
+  
+  /* Rectangle 5 */
+  #navbar{
+      position: absolute;
+  width: 1680px;
+  height: 81px;
+  left: 0px;
+  top: 0px;
+  
+  background: #9D7D61;
+  }
+  
+  #logo {
+      position: absolute;
+      width: 56px;
+      height: 55px;
+      left: 16px;
+      top: 13px;
+      background: url(/logo\ PlaceMe.png);
+  }
+  
+  
+  
+  /* PlaceMe */
+  #name{
+      position: absolute;
+      width: 137px;
+      height: 47px;
+      left: 90px;
+      top: 17px;
+      
+      font-family: 'Roboto Flex';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 47px;
+      /* identical to box height */
+      text-align: center;
+      
+      color: #DDD6CA;
+      
+      text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  
+  }
+  
+  /* Home */
+  #homeel{
+      position: absolute;
+      width: 75px;
+      height: 35px;
+      left: 1258px;
+      top: 24px;
+      
+      font-family: 'Roboto Flex';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 35px;
+      
+      color: #DDD6CA;
+      
+      text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  
+  }
+  /* About Us */
+  #aboutel{
+  /* About Us */
+  
+  position: absolute;
+  width: 113px;
+  height: 35px;
+  left: 1363px;
+  top: 24px;
+  
+  font-family: 'Roboto Flex';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 35px;
+  
+  color: #DDD6CA;
+  
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  /* Contact Us */
+  #contactel{
+  /* Contact Us */
+  
+  position: absolute;
+  width: 137px;
+  height: 35px;
+  left: 1506px;
+  top: 24px;
+  
+  font-family: 'Roboto Flex';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 35px;
+  
+  color: #DDD6CA;
+  
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  
+  }
+
+
+  #title-place {
+    position: absolute;
+    width: 241px;
+    height: 94px;
+    left: 709px;
+    top: 145px;
+    
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 94px;
+    /* identical to box height */
+    letter-spacing: -0.05em;
+    
+    color: #614D46;
+    
+      }
+    
+    #body-place {
+      position: absolute;
+    width: 897px;
+    height: 129px;
+    left: 392px;
+    top: 258px;
+    
+    font-family: 'Roboto Flex';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: justify;
+    
+    color: #614D46;
+    }
+
+
+
+
+#prt1 {
+    position: absolute;
+    width: 436px;
+    height: 53px;
+    left: 49px;
+    top: 554px;
+    
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    /* identical to box height */
+    letter-spacing: -0.05em;
+    
+    color: #614D46;
+}
+
+#drp1 {
+    position: absolute;
+    width: 300px;
+    height: 80px;
+    left: 49px;
+    top: 620px;
+}
+
+
+
+#prt2 {
+    position: absolute;
+    width: 439px;
+    height: 53px;
+    left: 620px;
+    top: 554px;
+    
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    /* identical to box height */
+    letter-spacing: -0.05em;
+    
+    color: #614D46;
+}
+
+#drp2 {
+    position: absolute;
+    width: 300px;
+    height: 80px;
+    left: 620px;
+    top: 620px;
+}
+
+
+
+#prt3 {
+    position: absolute;
+    width: 437px;
+    height: 53px;
+    left: 1194px;
+    top: 554px;
+    
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    /* identical to box height */
+    letter-spacing: -0.05em;
+    
+    color: #614D46;
+}
+
+#drp3 {
+    position: absolute;
+    width: 300px;
+    height: 80px;
+    left: 1194px;
+    top: 620px;
+}
+
+#submit-button {
+    position: absolute;
+width: 138px;
+height: 136px;
+left: 760px;
+top: 700px;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./briefresult.css" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&display=swap" rel="stylesheet">
+
+    <title>BriefMe Result</title>
+</head>
+<body>
+
+  <div id="navbar" class="navbar">
+    <img id="logo" src="/logo PlaceMe.png" alt="">
+    <a id="name" href="./index.html">PlaceMe</a>
+    <span class="elements" >
+        <a id="homeel" href="./index.html">Home</a>
+        <a id="aboutel" href="#about">About Us</a>
+        <a id="contactel" href="#contact">Contact</a>
+    </span>
+</div>
+
+    <h2 id = "title-brief" style="text-align:center"> BriefMe </h2>
+  <p>  
+    <output name="input" for="a b">
+
+    </output>
+  </p>
+
+  <span id = "Rectangle">
+  </span>
+
+  <div>
+    <p id = "Housing">
+      Housing Price: 
+    </p>
+  </div>
+
+  <div>
+    <p id = "Crime-Rate">
+      Crime Rate:
+    </p>
+  </div>
+
+  <img id = "generic-image" style="float: right;" alt="" src="/1027996.png" />
+  <div style="clear: right">
+   
+  </div> 
+  
+  <div>
+    <p id="conv">
+      Convenience:
+    </p>
+  </div>
+  <script defer>
+    pr = document.getElementById("Housing");
+    cr = document.getElementById("Crime-Rate");
+    conv = document.getElementById("conv");
+    pr.innerHTML = 'Price: ' + localStorage.getItem("price");
+    cr.innerHTML = 'Crime Rate: ' + localStorage.getItem("crate");
+    conv.innerHTML = 'Convenience: ' + localStorage.getItem("cscore");
+
+  </script>
+
+  
+  </body>
+  </html>

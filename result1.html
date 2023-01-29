@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./result1.css">
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&display=swap" rel="stylesheet">
+
+
+
+    <title>Result!</title>
+</head>
+<body>
+    <div id="navbar" class="navbar">
+        <img id="logo" src="logo PlaceMe.png" alt="logo">
+        <a id="name" href="./index.html">PlaceMe</a>
+        <span class="elements" >
+            <a id="homeel" href="./index.html">Home</a>
+            <a id="aboutel" href="#about">About Us</a>
+            <a id="contactel" href="#contact">Contact</a>
+        </span>
+    </div>
+    <h1 id="he">PlaceMe</h1>
+    <p id="yp">You Have Been Placed!</p>
+    <span id="sp10"></span>
+    <span id="sp9"></span>
+    <p id="n1">Name:</p>
+    <p id="hp1">Housing Price:</p>
+    <p id="cr1">Crime Rate:</p>
+    <p id="c1">Convenience:</p>
+
+    <span id="sp11"></span>
+    <span id="sp12"></span>
+    <p id="n2">Name:</p>
+    <p id="hp2">Housing Price:</p>
+    <p id="cr2">Crime Rate:</p>
+    <p id="c2">Convenience:</p>
+
+    <span id="sp13"></span>
+    <span id="sp14"></span>
+    <p id="n3">Name:</p>
+    <p id="hp3">Housing Price:</p>
+    <p id="cr3">Crime Rate:</p>
+    <p id="c3">Convenience:</p>
+
+    <span id="sp15"></span>
+    <span id="sp17"></span>
+    <p id="n4">Name:</p>
+    <p id="hp4">Housing Price:</p>
+    <p id="cr4">Crime Rate:</p>
+    <p id="c4">Convenience:</p>
+    
+    <span id="sp16"></span>
+    <span id="sp18"></span>
+    <p id="n5">Name:</p>
+    <p id="hp5">Housing Price:</p>
+    <p id="cr5">Crime Rate:</p>
+    <p id="c5">Convenience:</p>
+
+    <script defer>
+      var n1 = localStorage.getItem("n1");
+      var p1 = localStorage.getItem("p1");
+      var c1 = localStorage.getItem("c1");
+      var t1 = localStorage.getItem("t1");
+      var n2 = localStorage.getItem("n2");
+      var p2 = localStorage.getItem("p2");
+      var c2=  localStorage.getItem("c2");
+      var t2 = localStorage.getItem("t2");
+      var n3 = localStorage.getItem("n3");
+      var p3 = localStorage.getItem("p3");
+      var c3 =  localStorage.getItem("c3");
+      var t3 =  localStorage.getItem("t3");
+      var n4 =  localStorage.getItem("n4");
+      var p4 =  localStorage.getItem("p4");
+      var c4  = localStorage.getItem("c4");
+      var t4  = localStorage.getItem("t4");
+      var n5  = localStorage.getItem("n5");
+      var p5  = localStorage.getItem("p5");
+      var c5  = localStorage.getItem("c5");
+      var t5 =  localStorage.getItem("t5");
+      document.getElementById("n1").innerHTML = n1;
+      document.getElementById("hp1").innerHTML = "Housing Price : " + p1;
+      document.getElementById("cr1").innerHTML ="Crime Rate : " + c1;
+      document.getElementById("c1").innerHTML = "Convenience : " + t1 ;
+      document.getElementById("n2").innerHTML = n2;
+      document.getElementById("hp2").innerHTML ="Housing Price : " + p2;
+      document.getElementById("cr2").innerHTML ="Crime Rate : " + c2 ;
+      document.getElementById("c2").innerHTML = "Convenience : " + t2;
+      document.getElementById("n3").innerHTML = n3;
+      document.getElementById("hp3").innerHTML = "Housing Price : " + p3;
+      document.getElementById("cr3").innerHTML ="Crime Rate : " + c3;
+      document.getElementById("c3").innerHTML ="Convenience : " + t3;
+      document.getElementById("n4").innerHTML = n4;
+      document.getElementById("hp4").innerHTML="Housing Price : " + p4;
+      document.getElementById("cr4").innerHTML="Crime Rate : " + c4;
+      document.getElementById("c4").innerHTML="Convenience : " + t4;
+      document.getElementById("n5").innerHTML= n5;
+      document.getElementById("hp5").innerHTML="Housing Price : " + p5;
+      document.getElementById("cr5").innerHTML="Crime Rate : " + c5;
+      document.getElementById("c5").innerHTML="Convenience : " + t5;
+
+    </script>
+
+</body>
+</html>

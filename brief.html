@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&display=swap" rel="stylesheet">
+
+    <title>BriefMe</title>
+    <script>
+        const tcp = [{"Community":"South Riverdale","Price":"$1,592,777.00","Safety":1.757784,"eScore":91}, 
+{"Community":"Niagara","Price":"$800,000.00","Safety":1.581142,"eScore":89},
+{"Community":"Woodbine-Lumsden","Price":"$1,187,356.00","Safety":0.699301,"eScore":83.66},
+{"Community":"Greenwood-Coxwell","Price":"$1,360,833.00","Safety":1.505168,"eScore":79},
+{"Community":"Wychwood","Price":"$1,674,960.00","Safety":1.252958,"eScore":79}]
+
+const tpc = [{"Community":"Little Portugal","Price":"$1,970,200.00","Safety":1.144032,"eScore":84},
+{"Community":"Woodbine-Lumsden","Price":"$1,187,356.00","Safety":0.699301,"eScore":83.66},
+{"Community":"Wychwood","Price":"$1,674,960.00","Safety":1.252958,"eScore":79},
+{"Community":"Greenwood-Coxwell","Price":"$1,360,833.00","Safety":1.505168,"eScore":79},
+{"Community":"Briar Hill-Belgravia","Price":"$1,257,002.00","Safety":1.276566,"eScore":76}]
+
+const ctp = [{"Community":"Woodbine-Lumsden","Price":"$1,187,356.00","Safety":0.699301,"eScore":83.66},
+{"Community":"Woodbine Corridor","Price":"$1,215,123.00","Safety":1.227972,"eScore":75},
+{"Community":"Wychwood","Price":"$1,674,960.00","Safety":1.252958,"eScore":79},
+{"Community":"Briar Hill-Belgravia","Price":"$1,257,002.00","Safety":1.276566,"eScore":76},
+{"Community":"Long Branch","Price":"$1,409,889.00","Safety":1.309004,"eScore":72}]
+
+const cpt = [{"Community":"Woodbine-Lumsden","Price":"$1,187,356.00","Safety":0.699301,"eScore":83.66},
+{"Community":"Woodbine Corridor","Price":"$1,215,123.00","Safety":1.227972,"eScore":75},
+{"Community":"Wychwood","Price":"$1,674,960.00","Safety":1.252958,"eScore":79},
+{"Community":"Briar Hill-Belgravia","Price":"$1,257,002.00","Safety":1.276566,"eScore":76},
+{"Community":"Long Branch","Price":"$1,409,889.00","Safety":1.309004,"eScore":72}]
+
+const pct = [{"Community":"Niagara","Price":"$800,000.00","Safety":1.581142,"eScore":89},
+{"Community":"Oakridge","Price":"$1,161,833.00","Safety":1.820152,"eScore":68.66},
+{"Community":"Woodbine-Lumsden","Price":"$1,187,356.00","Safety":0.699301,"eScore":83.66},
+{"Community":"Woodbine Corridor","Price":"$1,215,123.00","Safety":1.227972,"eScore":75},
+{"Community":"Briar Hill-Belgravia","Price":"$1,257,002.00","Safety":1.276566,"eScore":76}]
+
+const ptc = [{"Community":"Niagara","Price":"$800,000.00","Safety":1.581142,"eScore":89},
+{"Community":"Woodbine-Lumsden","Price":"$1,187,356.00","Safety":0.699301,"eScore":83.66},
+{"Community":"Woodbine Corridor","Price":"$1,215,123.00","Safety":1.227972,"eScore":75},
+{"Community":"Briar Hill-Belgravia","Price":"$1,257,002.00","Safety":1.276566,"eScore":76},
+{"Community":"Etobicoke West Mall","Price":"$1,300,625.00","Safety":0.734301,"eScore":56}]
+
+const all = [{"Community":"Niagara","Price":"$800,000.00","Safety":1.581141758,"eScore":89},
+{"Community":"Regent Park","Price":"$1,000,000.00","Safety":2.425252245,"eScore":93.66},
+{"Community":"Weston","Price":"$1,037,127.00","Safety":1.861938639,"eScore":69.33},
+{"Community":"Elms-Old Rexdale","Price":"$1,073,000.00","Safety":1.300761421,"eScore":54.66},
+{"Community":"West Humber-Clairville","Price":"$1,101,169.00","Safety":3.043948127,"eScore":56.33},
+{"Community":"Oakridge","Price":"$1,161,833.00","Safety":1.820151679,"eScore":68.66},
+{"Community":"Woodbine-Lumsden","Price":"$1,187,356.00","Safety":0.699300699,"eScore":83.66},
+{"Community":"Humbermede","Price":"$1,204,750.00","Safety":2.090704407,"eScore":58},
+{"Community":"Woodbine Corridor","Price":"$1,215,123.00","Safety":1.227972251,"eScore":80.66666667},
+{"Community":"York University Heights","Price":"$1,230,308.00","Safety":2.641974414,"eScore":65.33333333},
+{"Community":"Briar Hill-Belgravia","Price":"$1,257,002.00","Safety":1.276565897,"eScore":76},
+{"Community":"Rouge E11","Price":"$1,288,824.00","Safety":0.802219546,"eScore":40.33333333},
+{"Community":"West Hill","Price":"$1,298,410.00","Safety":2.30359229,"eScore":48.66666667},
+{"Community":"Etobicoke West Mall","Price":"$1,300,625.00","Safety":0.734301148,"eScore":60},
+{"Community":"Guildwood","Price":"$1,315,281.00","Safety":0.504184733,"eScore":45.33333333},
+{"Community":"Greenwood-Coxwell","Price":"$1,360,833.00","Safety":1.505167511,"eScore":83},
+{"Community":"Long Branch","Price":"$1,409,889.00","Safety":1.309004363,"eScore":71.66666667},
+{"Community":"Humber Summit","Price":"$1,431,483.00","Safety":2.923646907,"eScore":53},
+{"Community":"Highland Creek","Price":"$1,457,240.00","Safety":1.032495598,"eScore":40.66666667},
+{"Community":"Alderwood","Price":"$1,471,473.00","Safety":1.309004363,"eScore":56.66666667},
+{"Community":"Pleasant View","Price":"$1,503,360.00","Safety":0.625869263,"eScore":54.66666667},
+{"Community":"Agincourt South-Malvern West","Price":"$1,546,524.00","Safety":1.153125999,"eScore":59},
+{"Community":"Yorkdale-Glen Park","Price":"$1,562,843.00","Safety":2.877600648,"eScore":65.33333333},
+{"Community":"South Riverdale","Price":"$1,592,777.00","Safety":1.757784474,"eScore":90.33333333},
+{"Community":"Kensington-Chinatown","Price":"$1,600,000.00","Safety":4.307606576,"eScore":97.33333333},
+{"Community":"Wychwood","Price":"$1,674,960.00","Safety":1.252958374,"eScore":81},
+{"Community":"Moss Park","Price":"$1,700,000.00","Safety":5.281381059,"eScore":96},
+{"Community":"Markland Wood","Price":"$1,794,195.00","Safety":0.634830396,"eScore":55},
+{"Community":"Lambton Baby Point","Price":"$1,843,364.00","Safety":1.252958374,"eScore":62.66666667},
+{"Community":"Little Portugal","Price":"$1,970,200.00","Safety":1.144032393,"eScore":89},
+{"Community":"Mount Pleasant East","Price":"$2,257,754.00","Safety":0.991300829,"eScore":73.66666667},
+{"Community":"Cabbagetown-South St. James Town","Price":"$2,341,250.00","Safety":2.373810952,"eScore":91.66666667},
+{"Community":"Lawrence Park North","Price":"$2,347,581.00","Safety":0.595604847,"eScore":68.66666667},
+{"Community":"Leaside","Price":"$2,525,467.00","Safety":0.689327312,"eScore":69.66666667},
+{"Community":"Church-Yonge Corridor","Price":"$2,600,000.00","Safety":4.537332482,"eScore":96},
+{"Community":"Mount Pleasant West","Price":"$3,039,333.00","Safety":0.991300829,"eScore":81.33333333},
+{"Community":"Edenbridge-Humber Valley","Price":"$3,412,251.00","Safety":0.791760541,"eScore":54.66666667},
+{"Community":"Casa Loma","Price":"$4,106,167.00","Safety":0.911743253,"eScore":79},
+{"Community":"Rosedale-Moore Park","Price":"$4,924,256.00","Safety":1.319122497,"eScore":73.33333333},
+{"Community":"Forest Hill South","Price":"$5,833,375.00","Safety":0.968296111,"eScore":74.66666667}]
+        function testResults (form) {
+          const inputValue = form.inputbox.value;
+          let findPlace = all.find((place) => place.Community === inputValue);
+
+          let cname = findPlace.Community;
+          let price = findPlace.Price;
+          let crate = findPlace.Safety;
+          let cscore = findPlace.eScore;
+          localStorage.setItem("cname",cname);
+          localStorage.setItem("price",price);
+          localStorage.setItem("crate",crate);
+          localStorage.setItem("cscore",cscore);
+        }
+        
+
+
+    </script>
+</head>
+<body>
+    <div id="navbar" class="navbar">
+        <img id="logo" src="/logo PlaceMe.png" alt="">
+        <a id="name" href="#">PlaceMe</a>
+        <span class="elements" >
+            <a id="homeel" href="#">Home</a>
+            <a id="aboutel" href="#about">About Us</a>
+            <a id="contactel" href="#contact">Contact</a>
+        </span>
+    </div>
+
+    <h2 id="title-brief" style="text-align:center"> BriefMe </h2>
+  <p id = "body-brief" style="text-align:center">  Enter any neighborhood below to get information about the Housing Prices, Crime Rate and its Convenience score.
+  </p>
+
+  
+
+  <div>
+    <form id = "text-submit" name="myForm" action="" method="GET">
+    ENTER A NEIGHBOURHOOD: <br>
+    <input id = "input-search" type="text" name="inputbox">
+    <a href="./briefresult.html"><input type="button" name="button" value="Submit" onClick= "testResults(this.form)"></a>
+    </form>
+  </div>
+</body>
+</html>

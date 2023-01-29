@@ -1,0 +1,253 @@
+body{
+  position: relative;
+  width: 1680px;
+  height: 800px;
+  
+  background: #DDD6CA;
+  }
+  html {
+      height: 100%;
+      overflow-x: hidden;
+  }
+  body {
+      min-height: 100%;
+      overflow-x: hidden;
+  }
+  
+  body { margin:0}
+  
+  /* Rectangle 5 */
+  #navbar{
+      position: absolute;
+  width: 1680px;
+  height: 81px;
+  left: 0px;
+  top: 0px;
+  
+  background: #9D7D61;
+  }
+  
+  #logo {
+      position: absolute;
+      width: 56px;
+      height: 55px;
+      left: 16px;
+      top: 13px;
+      background: url(/logo\ PlaceMe.png);
+  }
+  
+  
+  
+  /* PlaceMe */
+  #name{
+      position: absolute;
+      width: 137px;
+      height: 47px;
+      left: 90px;
+      top: 17px;
+      
+      font-family: 'Roboto Flex';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 47px;
+      /* identical to box height */
+      text-align: center;
+      
+      color: #DDD6CA;
+      
+      text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  
+  }
+  
+  /* Home */
+  #homeel{
+      position: absolute;
+      width: 75px;
+      height: 35px;
+      left: 1258px;
+      top: 24px;
+      
+      font-family: 'Roboto Flex';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 35px;
+      
+      color: #DDD6CA;
+      
+      text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  
+  }
+  /* About Us */
+  #aboutel{
+  /* About Us */
+  
+  position: absolute;
+  width: 113px;
+  height: 35px;
+  left: 1363px;
+  top: 24px;
+  
+  font-family: 'Roboto Flex';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 35px;
+  
+  color: #DDD6CA;
+  
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  /* Contact Us */
+  #contactel{
+  /* Contact Us */
+  
+  position: absolute;
+  width: 137px;
+  height: 35px;
+  left: 1506px;
+  top: 24px;
+  
+  font-family: 'Roboto Flex';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 35px;
+  
+  color: #DDD6CA;
+  
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  
+  }
+
+  #title-brief {
+    position: absolute;
+width: 241px;
+height: 94px;
+left: 720px;
+top: 50px;
+
+font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: 700;
+font-size: 80px;
+line-height: 94px;
+/* identical to box height */
+letter-spacing: -0.05em;
+
+color: #614D46;
+    
+}
+
+#generic-image {
+    position: absolute;
+width: 400px;
+height: 400px;
+left: 1100px;
+top: 300px;
+}
+
+
+#Rectangle {
+    position: absolute;
+    width: 1544px;
+    height: 610px;
+    left: 72px;
+    top: 209px;
+    
+    background: #CDC1AB;
+    backdrop-filter: blur(2px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 50px;
+}
+
+
+#Housing {
+
+    position: absolute;
+    width: 422px;
+    height: 80px;
+    left: 121px;
+    top: 300px;
+    
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+    
+    color: #614D46;
+    
+}
+
+#Crime-Rate {
+
+    position: absolute;
+    width: 422px;
+    height: 80px;
+    left: 121px;
+    top: 450px;
+    
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+    
+    color: #614D46;
+}
+
+#conv {
+    position: absolute;
+    width: 422px;
+    height: 80px;
+    left: 121px;
+    top: 600px;
+    
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+    
+    color: #614D46;
+    
+}
+
+
+
+
+
+
+
+
+/*TEST!*/
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  input[type="text"] {
+    padding: 0.5em;
+    font-size: 1em;
+    margin-bottom: 1em;
+  }
+  
+  button {
+    padding: 0.5em 1em;
+    font-size: 1em;
+    background-color: lightblue;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+  }
+  
+  #output {
+    margin-top: 1em;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
